@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12T21:56:30.877432",
+  "updated_at": "2026-03-12T21:56:35.156050",
   "mode": "paper",
   "kill_switch": false,
   "circuit_breaker_active": false,
@@ -67,23 +67,23 @@
     }
   ],
   "prices": {
+    "BTCUSDT": {
+      "price": 70297.4,
+      "change_pct": -0.538,
+      "volume": 17450.836
+    },
     "ETHUSDT": {
       "price": 2062.8,
       "change_pct": -0.42,
-      "volume": 329551.033
+      "volume": 329554.111
     },
     "SOLUSDT": {
       "price": 86.47,
       "change_pct": -1.177,
-      "volume": 1437212.07
-    },
-    "BTCUSDT": {
-      "price": 70297.4,
-      "change_pct": -0.538,
-      "volume": 17450.749
+      "volume": 1437215.47
     }
   },
-  "last_price_update": "2026-03-12T21:56:30.873921",
+  "last_price_update": "2026-03-12T21:56:35.151326",
   "exchange_status": "connected",
   "data_status": "live",
   "sync_status": "synced",
@@ -127,7 +127,18 @@
   "signal_candidates": [],
   "blocked_signals": [
     {
-      "timestamp": "2026-03-12T21:56:30.875949",
+      "timestamp": "2026-03-12T21:56:35.154288",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "price": 70297.4,
+      "confidence": 5.38,
+      "change_pct": -0.538,
+      "regime": "range",
+      "explanation": "Weak momentum: -0.54% in 24h. Early entry attempt.",
+      "block_reason": "Confidence 5% < threshold 70%"
+    },
+    {
+      "timestamp": "2026-03-12T21:56:35.154325",
       "symbol": "ETHUSDT",
       "side": "SHORT",
       "price": 2062.8,
@@ -138,7 +149,7 @@
       "block_reason": "Confidence 4% < threshold 70%"
     },
     {
-      "timestamp": "2026-03-12T21:56:30.875977",
+      "timestamp": "2026-03-12T21:56:35.154338",
       "symbol": "SOLUSDT",
       "side": "SHORT",
       "price": 86.47,
@@ -147,17 +158,6 @@
       "regime": "range",
       "explanation": "Moderate momentum: -1.18% in 24h. Continuation play.",
       "block_reason": "Confidence 12% < threshold 70%"
-    },
-    {
-      "timestamp": "2026-03-12T21:56:30.875987",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "price": 70297.4,
-      "confidence": 5.38,
-      "change_pct": -0.538,
-      "regime": "range",
-      "explanation": "Weak momentum: -0.54% in 24h. Early entry attempt.",
-      "block_reason": "Confidence 5% < threshold 70%"
     }
   ]
 }
