@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-12T22:01:58.931461",
+  "updated_at": "2026-03-12T22:02:03.158931",
   "mode": "paper",
   "kill_switch": false,
   "circuit_breaker_active": false,
@@ -7,7 +7,7 @@
   "balance": 9400.0,
   "open_positions": 3,
   "realized_pnl": 0,
-  "unrealized_pnl": -0.08,
+  "unrealized_pnl": 0.02,
   "daily_pnl": 0,
   "win_rate": 0,
   "total_trades": 0,
@@ -88,23 +88,23 @@
     }
   ],
   "prices": {
-    "BTCUSDT": {
-      "price": 70260.0,
-      "change_pct": -0.688,
-      "volume": 17465.027
-    },
     "ETHUSDT": {
-      "price": 2063.3,
+      "price": 2062.8,
       "change_pct": -0.444,
-      "volume": 329730.076
+      "volume": 329686.699
     },
     "SOLUSDT": {
-      "price": 86.49,
-      "change_pct": -1.154,
-      "volume": 1437533.94
+      "price": 86.48,
+      "change_pct": -1.166,
+      "volume": 1437538.02
+    },
+    "BTCUSDT": {
+      "price": 70251.1,
+      "change_pct": -0.683,
+      "volume": 17459.599
     }
   },
-  "last_price_update": "2026-03-12T22:01:58.924118",
+  "last_price_update": "2026-03-12T22:02:03.149678",
   "exchange_status": "connected",
   "data_status": "live",
   "sync_status": "synced",
@@ -113,34 +113,34 @@
   "last_20_trades": [],
   "signal_candidates": [
     {
-      "timestamp": "2026-03-12T22:01:58.927119",
-      "symbol": "BTCUSDT",
+      "timestamp": "2026-03-12T22:02:03.154713",
+      "symbol": "SOLUSDT",
       "side": "SHORT",
-      "price": 70260.0,
-      "confidence": 6.88,
-      "change_pct": -0.688,
+      "price": 86.48,
+      "confidence": 11.66,
+      "change_pct": -1.166,
       "regime": "range",
-      "explanation": "Weak momentum: -0.69% in 24h. Early entry attempt.",
+      "explanation": "Moderate momentum: -1.17% in 24h. Continuation play.",
       "block_reason": null
     },
     {
-      "timestamp": "2026-03-12T22:01:58.927179",
-      "symbol": "SOLUSDT",
+      "timestamp": "2026-03-12T22:02:03.154739",
+      "symbol": "BTCUSDT",
       "side": "SHORT",
-      "price": 86.49,
-      "confidence": 11.54,
-      "change_pct": -1.154,
+      "price": 70251.1,
+      "confidence": 6.83,
+      "change_pct": -0.683,
       "regime": "range",
-      "explanation": "Moderate momentum: -1.15% in 24h. Continuation play.",
+      "explanation": "Weak momentum: -0.68% in 24h. Early entry attempt.",
       "block_reason": null
     }
   ],
   "blocked_signals": [
     {
-      "timestamp": "2026-03-12T22:01:58.927165",
+      "timestamp": "2026-03-12T22:02:03.154613",
       "symbol": "ETHUSDT",
       "side": "SHORT",
-      "price": 2063.3,
+      "price": 2062.8,
       "confidence": 4.44,
       "change_pct": -0.444,
       "regime": "range",
@@ -148,20 +148,20 @@
       "block_reason": "Confidence 4% < threshold 5%"
     },
     {
-      "timestamp": "2026-03-12T22:01:58.928851",
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "confidence": 6.88,
-      "block_reason": "Max 3 positions",
-      "explanation": "Weak momentum: -0.69% in 24h. Early entry attempt."
-    },
-    {
-      "timestamp": "2026-03-12T22:01:58.929819",
+      "timestamp": "2026-03-12T22:02:03.156553",
       "symbol": "SOLUSDT",
       "side": "SHORT",
-      "confidence": 11.54,
+      "confidence": 11.66,
       "block_reason": "Max 3 positions",
-      "explanation": "Moderate momentum: -1.15% in 24h. Continuation pla"
+      "explanation": "Moderate momentum: -1.17% in 24h. Continuation pla"
+    },
+    {
+      "timestamp": "2026-03-12T22:02:03.157514",
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "confidence": 6.83,
+      "block_reason": "Max 3 positions",
+      "explanation": "Weak momentum: -0.68% in 24h. Early entry attempt."
     }
   ]
 }
