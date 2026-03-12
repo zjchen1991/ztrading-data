@@ -1,68 +1,111 @@
 {
-  "updated_at": "2026-03-12T20:45:06.996491",
-  "equity": 10012.25,
-  "balance": 10012.25,
-  "open_positions": 2,
-  "total_pnl": 12.25,
+  "updated_at": "2026-03-12T21:48:00.965434",
+  "mode": "paper",
+  "kill_switch": false,
+  "circuit_breaker_active": false,
+  "equity": 10034.3,
+  "balance": 9434.3,
+  "open_positions": 3,
+  "total_pnl": 34.3,
+  "daily_pnl": 0,
   "win_rate": 100.0,
-  "total_trades": 1,
+  "total_trades": 2,
+  "daily_trades": 0,
+  "max_drawdown": 0,
+  "avg_win": 17.15,
+  "avg_loss": 0,
+  "profit_factor": 0,
+  "open_risk": 0,
+  "consecutive_losses": 0,
   "positions": [
     {
       "id": 1773345800000,
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "entry_price": 70440.2,
-      "sl_price": 68327.0,
-      "tp_price": 74666.6,
+      "entry_price": 70200.0,
+      "sl_price": 68000.0,
+      "tp_price": 74400.0,
       "position_size": 200.0,
+      "qty": 0.00285,
       "confidence": 85.0,
-      "reason": "Test trade for dashboard",
       "strategy": "momentum",
-      "dca_layers": 1,
-      "parent_trade": null,
       "status": "open",
-      "opened_at": "2026-03-12T20:01:00",
-      "closed_at": null,
-      "pnl": 0,
-      "exit_reason": null,
-      "qty": 0.002854
+      "opened_at": "2026-03-12T20:42:00"
     },
     {
       "id": 1773345820000,
       "symbol": "ETHUSDT",
       "side": "SHORT",
-      "entry_price": 2065.5,
-      "sl_price": 2127.5,
-      "tp_price": 2001.8,
+      "entry_price": 2080.0,
+      "sl_price": 2142.0,
+      "tp_price": 2018.0,
       "position_size": 200.0,
-      "confidence": 75.0,
-      "reason": "Test trade for dashboard",
+      "qty": 0.09615,
+      "confidence": 72.0,
       "strategy": "momentum",
-      "dca_layers": 1,
-      "parent_trade": null,
       "status": "open",
-      "opened_at": "2026-03-12T20:01:20",
-      "closed_at": null,
-      "pnl": 0,
-      "exit_reason": null,
-      "qty": 0.097083
+      "opened_at": "2026-03-12T20:43:00"
+    },
+    {
+      "id": 1773345840000,
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "entry_price": 86.0,
+      "sl_price": 83.4,
+      "tp_price": 91.2,
+      "position_size": 200.0,
+      "qty": 2.32558,
+      "confidence": 78.0,
+      "strategy": "momentum",
+      "status": "open",
+      "opened_at": "2026-03-12T20:44:00"
     }
   ],
   "prices": {
     "ETHUSDT": {
-      "price": 2060.1,
-      "change_pct": -0.454,
-      "volume": 330204.717
+      "price": 2059.8,
+      "change_pct": -0.372,
+      "volume": 329210.744
     },
     "SOLUSDT": {
-      "price": 86.4,
-      "change_pct": -0.997,
-      "volume": 1435518.3
+      "price": 86.3,
+      "change_pct": -1.225,
+      "volume": 1434818.99
     },
     "BTCUSDT": {
-      "price": 70085.4,
-      "change_pct": -0.59,
-      "volume": 17696.746
+      "price": 70240.8,
+      "change_pct": -0.509,
+      "volume": 17434.838
     }
-  }
+  },
+  "last_price_update": "2026-03-12T21:48:00.961330",
+  "errors": [],
+  "pnl_by_symbol": {
+    "BTCUSDT": 20.0,
+    "ETHUSDT": 14.3
+  },
+  "last_20_trades": [
+    {
+      "id": 1773344000000,
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 69500.0,
+      "exit_price": 70200.0,
+      "position_size": 200.0,
+      "pnl": 20.0,
+      "exit_reason": "take_profit",
+      "closed_at": "2026-03-12T20:35:00"
+    },
+    {
+      "id": 1773344200000,
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "entry_price": 2100.0,
+      "exit_price": 2085.0,
+      "position_size": 200.0,
+      "pnl": 14.3,
+      "exit_reason": "take_profit",
+      "closed_at": "2026-03-12T20:38:00"
+    }
+  ]
 }
