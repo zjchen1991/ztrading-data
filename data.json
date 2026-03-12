@@ -1,26 +1,65 @@
 {
-  "updated_at": "2026-03-12T19:45:02.182820",
-  "equity": 10000,
-  "open_positions": 0,
-  "total_pnl": 0,
-  "win_rate": 0,
-  "total_trades": 0,
-  "positions": [],
-  "prices": {
-    "BTCUSDT": {
-      "price": 70279.5,
-      "change_pct": -0.559,
-      "volume": 22222.34782
+  "updated_at": "2026-03-12T20:01:54.458979",
+  "equity": 10012.25,
+  "open_positions": 2,
+  "total_pnl": 12.25,
+  "win_rate": 100.0,
+  "total_trades": 1,
+  "positions": [
+    {
+      "id": 1773345800000,
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "entry_price": 70440.2,
+      "sl_price": 68327.0,
+      "tp_price": 74666.6,
+      "position_size": 200.0,
+      "confidence": 85.0,
+      "reason": "Test trade for dashboard",
+      "strategy": "momentum",
+      "dca_layers": 1,
+      "parent_trade": null,
+      "status": "open",
+      "opened_at": "2026-03-12T20:01:00",
+      "closed_at": null,
+      "pnl": 0,
+      "exit_reason": null
     },
+    {
+      "id": 1773345820000,
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "entry_price": 2065.5,
+      "sl_price": 2127.5,
+      "tp_price": 2001.8,
+      "position_size": 200.0,
+      "confidence": 75.0,
+      "reason": "Test trade for dashboard",
+      "strategy": "momentum",
+      "dca_layers": 1,
+      "parent_trade": null,
+      "status": "open",
+      "opened_at": "2026-03-12T20:01:20",
+      "closed_at": null,
+      "pnl": 0,
+      "exit_reason": null
+    }
+  ],
+  "prices": {
     "ETHUSDT": {
-      "price": 2067.78,
-      "change_pct": -0.348,
-      "volume": 344865.9829
+      "price": 2069.6,
+      "change_pct": -0.183,
+      "volume": 328132.745
     },
     "SOLUSDT": {
-      "price": 86.67,
-      "change_pct": -0.722,
-      "volume": 2922747.023
+      "price": 86.79,
+      "change_pct": -0.39,
+      "volume": 1418081.77
+    },
+    "BTCUSDT": {
+      "price": 70447.1,
+      "change_pct": -0.147,
+      "volume": 17618.33
     }
   }
 }
