@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-13T11:43:51.898870",
+  "updated_at": "2026-03-13T11:43:56.273137",
   "mode": "paper",
   "strategy": "DCA Long",
   "kill_switch": false,
   "equity": 10000,
-  "balance": 9650,
-  "open_positions": 7,
+  "balance": 9600,
+  "open_positions": 8,
   "realized_pnl": 0,
   "unrealized_pnl": 0,
   "daily_pnl": 0,
@@ -116,50 +116,65 @@
       "closed_at": null,
       "pnl": 0,
       "exit_reason": null
+    },
+    {
+      "id": 1773402236026,
+      "symbol": "XAGUSDT",
+      "side": "LONG",
+      "entry_price": 84.79442961000001,
+      "position_size": 50,
+      "layer": 3,
+      "leverage": 50,
+      "profit_target": 85.6423739061,
+      "status": "open",
+      "opened_at": "2026-03-13T11:43:56.023495",
+      "closed_at": null,
+      "pnl": 0,
+      "exit_reason": null
     }
   ],
   "prices": {
     "XAUUSDT": {
-      "price": 5094.45,
+      "price": 5094.12,
       "high_24h": 5182.0,
       "low_24h": 5061.7,
-      "change_pct": -1.571,
-      "volume": 6869.166
+      "change_pct": -1.577,
+      "volume": 6871.134
     },
     "ETHUSDT": {
-      "price": 2119.5,
+      "price": 2119.4,
       "high_24h": 2147.5,
       "low_24h": 2036.8,
-      "change_pct": 2.218,
-      "volume": 399706.874
+      "change_pct": 2.214,
+      "volume": 399713.846
     },
     "BTCUSDT": {
-      "price": 72246.2,
+      "price": 72239.3,
       "high_24h": 72537.0,
       "low_24h": 69305.5,
-      "change_pct": 2.255,
-      "volume": 21490.045
+      "change_pct": 2.245,
+      "volume": 21490.12
     },
     "XAGUSDT": {
       "price": 83.1,
       "high_24h": 87.39,
       "low_24h": 81.64,
       "change_pct": -4.439,
-      "volume": 339018.786
+      "volume": 339021.227
     },
     "HYPEUSDT": {
-      "price": 37.335,
+      "price": 37.333,
       "high_24h": 38.472,
       "low_24h": 36.834,
-      "change_pct": -0.739,
-      "volume": 539748.23
+      "change_pct": -0.744,
+      "volume": 539753.36
     }
   },
   "dca_layers": {
     "BTCUSDT": 0,
     "ETHUSDT": 1,
     "HYPEUSDT": 2,
-    "XAGUSDT": 2,
+    "XAGUSDT": 3,
     "XAUUSDT": 1
   },
   "pnl_by_symbol": {}
