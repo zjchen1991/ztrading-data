@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13T04:35:58.801901",
+  "updated_at": "2026-03-13T04:36:02.943524",
   "mode": "paper",
   "kill_switch": false,
   "circuit_breaker_active": false,
@@ -88,23 +88,23 @@
     }
   ],
   "prices": {
+    "BTCUSDT": {
+      "price": 71284.0,
+      "change_pct": 2.842,
+      "volume": 20340.321
+    },
     "ETHUSDT": {
-      "price": 2110.0,
-      "change_pct": 4.218,
-      "volume": 379536.703
+      "price": 2109.8,
+      "change_pct": 4.301,
+      "volume": 379255.904
     },
     "SOLUSDT": {
       "price": 89.24,
-      "change_pct": 5.013,
-      "volume": 1678561.95
-    },
-    "BTCUSDT": {
-      "price": 71282.2,
-      "change_pct": 2.742,
-      "volume": 20348.221
+      "change_pct": 5.112,
+      "volume": 1678393.0
     }
   },
-  "last_price_update": "2026-03-13T04:35:58.790590",
+  "last_price_update": "2026-03-13T04:36:02.937330",
   "exchange_status": "connected",
   "data_status": "live",
   "sync_status": "synced",
@@ -169,63 +169,63 @@
   ],
   "signal_candidates": [
     {
-      "timestamp": "2026-03-13T04:35:58.795258",
-      "symbol": "ETHUSDT",
+      "timestamp": "2026-03-13T04:36:02.939893",
+      "symbol": "BTCUSDT",
       "side": "LONG",
-      "price": 2110.0,
-      "confidence": 42.18,
-      "change_pct": 4.218,
+      "price": 71284.0,
+      "confidence": 28.42,
+      "change_pct": 2.842,
       "regime": "trending",
-      "explanation": "Strong momentum: +4.22% in 24h. Breakout signal.",
+      "explanation": "Strong momentum: +2.84% in 24h. Breakout signal.",
       "block_reason": null
     },
     {
-      "timestamp": "2026-03-13T04:35:58.795432",
+      "timestamp": "2026-03-13T04:36:02.939918",
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "price": 2109.8,
+      "confidence": 43.01,
+      "change_pct": 4.301,
+      "regime": "trending",
+      "explanation": "Strong momentum: +4.30% in 24h. Breakout signal.",
+      "block_reason": null
+    },
+    {
+      "timestamp": "2026-03-13T04:36:02.939926",
       "symbol": "SOLUSDT",
       "side": "LONG",
       "price": 89.24,
-      "confidence": 50.13,
-      "change_pct": 5.013,
+      "confidence": 51.12,
+      "change_pct": 5.112,
       "regime": "trending",
-      "explanation": "Strong momentum: +5.01% in 24h. Breakout signal.",
-      "block_reason": null
-    },
-    {
-      "timestamp": "2026-03-13T04:35:58.795446",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "price": 71282.2,
-      "confidence": 27.42,
-      "change_pct": 2.742,
-      "regime": "trending",
-      "explanation": "Strong momentum: +2.74% in 24h. Breakout signal.",
+      "explanation": "Strong momentum: +5.11% in 24h. Breakout signal.",
       "block_reason": null
     }
   ],
   "blocked_signals": [
     {
-      "timestamp": "2026-03-13T04:35:58.797438",
-      "symbol": "ETHUSDT",
-      "side": "LONG",
-      "confidence": 42.18,
-      "block_reason": "Max 3 positions",
-      "explanation": "Strong momentum: +4.22% in 24h. Breakout signal."
-    },
-    {
-      "timestamp": "2026-03-13T04:35:58.798661",
-      "symbol": "SOLUSDT",
-      "side": "LONG",
-      "confidence": 50.13,
-      "block_reason": "Max 3 positions",
-      "explanation": "Strong momentum: +5.01% in 24h. Breakout signal."
-    },
-    {
-      "timestamp": "2026-03-13T04:35:58.799566",
+      "timestamp": "2026-03-13T04:36:02.940988",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "confidence": 27.42,
+      "confidence": 28.42,
       "block_reason": "Max 3 positions",
-      "explanation": "Strong momentum: +2.74% in 24h. Breakout signal."
+      "explanation": "Strong momentum: +2.84% in 24h. Breakout signal."
+    },
+    {
+      "timestamp": "2026-03-13T04:36:02.941811",
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "confidence": 43.01,
+      "block_reason": "Max 3 positions",
+      "explanation": "Strong momentum: +4.30% in 24h. Breakout signal."
+    },
+    {
+      "timestamp": "2026-03-13T04:36:02.942463",
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "confidence": 51.12,
+      "block_reason": "Max 3 positions",
+      "explanation": "Strong momentum: +5.11% in 24h. Breakout signal."
     }
   ]
 }
