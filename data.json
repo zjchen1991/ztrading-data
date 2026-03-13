@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13T09:06:49.071892",
+  "updated_at": "2026-03-13T09:06:53.236614",
   "mode": "paper",
   "kill_switch": false,
   "circuit_breaker_active": false,
@@ -7,7 +7,7 @@
   "balance": 9387.69,
   "open_positions": 3,
   "realized_pnl": -12.56,
-  "unrealized_pnl": -5.31,
+  "unrealized_pnl": -5.32,
   "daily_pnl": -12.56,
   "win_rate": 0.0,
   "total_trades": 2,
@@ -88,23 +88,23 @@
     }
   ],
   "prices": {
+    "BTCUSDT": {
+      "price": 71885.6,
+      "change_pct": 2.954,
+      "volume": 21297.974
+    },
     "ETHUSDT": {
-      "price": 2102.9,
-      "change_pct": 2.796,
-      "volume": 387356.174
+      "price": 2103.9,
+      "change_pct": 2.845,
+      "volume": 387359.729
     },
     "SOLUSDT": {
       "price": 89.24,
       "change_pct": 4.094,
-      "volume": 1733421.72
-    },
-    "BTCUSDT": {
-      "price": 71864.2,
-      "change_pct": 2.923,
-      "volume": 21296.156
+      "volume": 1733441.51
     }
   },
-  "last_price_update": "2026-03-13T09:06:49.064357",
+  "last_price_update": "2026-03-13T09:06:53.228014",
   "exchange_status": "connected",
   "data_status": "live",
   "sync_status": "synced",
@@ -169,18 +169,29 @@
   ],
   "signal_candidates": [
     {
-      "timestamp": "2026-03-13T09:06:49.068268",
-      "symbol": "ETHUSDT",
+      "timestamp": "2026-03-13T09:06:53.231960",
+      "symbol": "BTCUSDT",
       "side": "LONG",
-      "price": 2102.9,
-      "confidence": 27.96,
-      "change_pct": 2.796,
+      "price": 71885.6,
+      "confidence": 29.54,
+      "change_pct": 2.954,
       "regime": "trending",
-      "explanation": "Strong momentum: +2.80% in 24h. Breakout signal.",
+      "explanation": "Strong momentum: +2.95% in 24h. Breakout signal.",
       "block_reason": null
     },
     {
-      "timestamp": "2026-03-13T09:06:49.068306",
+      "timestamp": "2026-03-13T09:06:53.232002",
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "price": 2103.9,
+      "confidence": 28.45,
+      "change_pct": 2.845,
+      "regime": "trending",
+      "explanation": "Strong momentum: +2.85% in 24h. Breakout signal.",
+      "block_reason": null
+    },
+    {
+      "timestamp": "2026-03-13T09:06:53.232014",
       "symbol": "SOLUSDT",
       "side": "LONG",
       "price": 89.24,
@@ -189,43 +200,32 @@
       "regime": "trending",
       "explanation": "Strong momentum: +4.09% in 24h. Breakout signal.",
       "block_reason": null
-    },
-    {
-      "timestamp": "2026-03-13T09:06:49.068332",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "price": 71864.2,
-      "confidence": 29.23,
-      "change_pct": 2.923,
-      "regime": "trending",
-      "explanation": "Strong momentum: +2.92% in 24h. Breakout signal.",
-      "block_reason": null
     }
   ],
   "blocked_signals": [
     {
-      "timestamp": "2026-03-13T09:06:49.069244",
-      "symbol": "ETHUSDT",
+      "timestamp": "2026-03-13T09:06:53.233498",
+      "symbol": "BTCUSDT",
       "side": "LONG",
-      "confidence": 27.96,
+      "confidence": 29.54,
       "block_reason": "Max 3 positions",
-      "explanation": "Strong momentum: +2.80% in 24h. Breakout signal."
+      "explanation": "Strong momentum: +2.95% in 24h. Breakout signal."
     },
     {
-      "timestamp": "2026-03-13T09:06:49.069967",
+      "timestamp": "2026-03-13T09:06:53.234180",
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "confidence": 28.45,
+      "block_reason": "Max 3 positions",
+      "explanation": "Strong momentum: +2.85% in 24h. Breakout signal."
+    },
+    {
+      "timestamp": "2026-03-13T09:06:53.234941",
       "symbol": "SOLUSDT",
       "side": "LONG",
       "confidence": 40.94,
       "block_reason": "Max 3 positions",
       "explanation": "Strong momentum: +4.09% in 24h. Breakout signal."
-    },
-    {
-      "timestamp": "2026-03-13T09:06:49.070614",
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "confidence": 29.23,
-      "block_reason": "Max 3 positions",
-      "explanation": "Strong momentum: +2.92% in 24h. Breakout signal."
     }
   ]
 }
