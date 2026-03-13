@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-13T11:43:42.791180",
+  "updated_at": "2026-03-13T11:43:47.436320",
   "mode": "paper",
   "strategy": "DCA Long",
   "kill_switch": false,
   "equity": 10000,
-  "balance": 9900,
-  "open_positions": 2,
+  "balance": 9750,
+  "open_positions": 5,
   "realized_pnl": 0,
   "unrealized_pnl": 0,
   "daily_pnl": 0,
@@ -41,35 +41,96 @@
       "closed_at": null,
       "pnl": 0,
       "exit_reason": null
+    },
+    {
+      "id": 1773402226971,
+      "symbol": "HYPEUSDT",
+      "side": "LONG",
+      "entry_price": 38.08728,
+      "position_size": 50,
+      "layer": 1,
+      "leverage": 50,
+      "profit_target": 38.4681528,
+      "status": "open",
+      "opened_at": "2026-03-13T11:43:46.970305",
+      "closed_at": null,
+      "pnl": 0,
+      "exit_reason": null
+    },
+    {
+      "id": 1773402227115,
+      "symbol": "XAGUSDT",
+      "side": "LONG",
+      "entry_price": 86.5161,
+      "position_size": 50,
+      "layer": 1,
+      "leverage": 50,
+      "profit_target": 87.381261,
+      "status": "open",
+      "opened_at": "2026-03-13T11:43:47.114275",
+      "closed_at": null,
+      "pnl": 0,
+      "exit_reason": null
+    },
+    {
+      "id": 1773402227274,
+      "symbol": "XAUUSDT",
+      "side": "LONG",
+      "entry_price": 5130.18,
+      "position_size": 50,
+      "layer": 1,
+      "leverage": 50,
+      "profit_target": 5181.4818000000005,
+      "status": "open",
+      "opened_at": "2026-03-13T11:43:47.273499",
+      "closed_at": null,
+      "pnl": 0,
+      "exit_reason": null
     }
   ],
   "prices": {
     "BTCUSDT": {
-      "price": 72263.6,
+      "price": 72254.0,
       "high_24h": 72537.0,
       "low_24h": 69305.5,
-      "change_pct": 2.28,
-      "volume": 21489.455
+      "change_pct": 2.266,
+      "volume": 21489.646
+    },
+    "HYPEUSDT": {
+      "price": 37.334,
+      "high_24h": 38.472,
+      "low_24h": 36.834,
+      "change_pct": -0.742,
+      "volume": 539740.56
+    },
+    "XAGUSDT": {
+      "price": 83.11,
+      "high_24h": 87.39,
+      "low_24h": 81.64,
+      "change_pct": -4.427,
+      "volume": 339007.363
     },
     "ETHUSDT": {
-      "price": 2120.0,
+      "price": 2120.4,
       "high_24h": 2147.5,
       "low_24h": 2036.8,
-      "change_pct": 2.243,
-      "volume": 399679.114
+      "change_pct": 2.262,
+      "volume": 399684.819
     },
-    "SOLUSDT": {
-      "price": 90.02,
-      "high_24h": 91.09,
-      "low_24h": 85.05,
-      "change_pct": 3.555,
-      "volume": 1730782.79
+    "XAUUSDT": {
+      "price": 5094.45,
+      "high_24h": 5182.0,
+      "low_24h": 5061.7,
+      "change_pct": -1.571,
+      "volume": 6867.199
     }
   },
   "dca_layers": {
     "BTCUSDT": 0,
     "ETHUSDT": 1,
-    "SOLUSDT": 1
+    "HYPEUSDT": 1,
+    "XAGUSDT": 1,
+    "XAUUSDT": 1
   },
   "pnl_by_symbol": {}
 }
