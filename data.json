@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-03-13T11:43:56.273137",
+  "updated_at": "2026-03-13T11:44:00.794993",
   "mode": "paper",
   "strategy": "DCA Long",
   "kill_switch": false,
   "equity": 10000,
-  "balance": 9600,
-  "open_positions": 8,
+  "balance": 9550,
+  "open_positions": 9,
   "realized_pnl": 0,
   "unrealized_pnl": 0,
   "daily_pnl": 0,
@@ -131,50 +131,65 @@
       "closed_at": null,
       "pnl": 0,
       "exit_reason": null
+    },
+    {
+      "id": 1773402240649,
+      "symbol": "XAGUSDT",
+      "side": "LONG",
+      "entry_price": 83.9464853139,
+      "position_size": 50,
+      "layer": 4,
+      "leverage": 50,
+      "profit_target": 84.785950167039,
+      "status": "open",
+      "opened_at": "2026-03-13T11:44:00.645879",
+      "closed_at": null,
+      "pnl": 0,
+      "exit_reason": null
     }
   ],
   "prices": {
-    "XAUUSDT": {
-      "price": 5094.12,
-      "high_24h": 5182.0,
-      "low_24h": 5061.7,
-      "change_pct": -1.577,
-      "volume": 6871.134
+    "BTCUSDT": {
+      "price": 72239.3,
+      "high_24h": 72537.0,
+      "low_24h": 69305.5,
+      "change_pct": 2.245,
+      "volume": 21490.348
+    },
+    "HYPEUSDT": {
+      "price": 37.336,
+      "high_24h": 38.472,
+      "low_24h": 36.834,
+      "change_pct": -0.736,
+      "volume": 539757.66
+    },
+    "XAGUSDT": {
+      "price": 83.09,
+      "high_24h": 87.39,
+      "low_24h": 81.64,
+      "change_pct": -4.45,
+      "volume": 339024.171
     },
     "ETHUSDT": {
       "price": 2119.4,
       "high_24h": 2147.5,
       "low_24h": 2036.8,
       "change_pct": 2.214,
-      "volume": 399713.846
+      "volume": 399728.187
     },
-    "BTCUSDT": {
-      "price": 72239.3,
-      "high_24h": 72537.0,
-      "low_24h": 69305.5,
-      "change_pct": 2.245,
-      "volume": 21490.12
-    },
-    "XAGUSDT": {
-      "price": 83.1,
-      "high_24h": 87.39,
-      "low_24h": 81.64,
-      "change_pct": -4.439,
-      "volume": 339021.227
-    },
-    "HYPEUSDT": {
-      "price": 37.333,
-      "high_24h": 38.472,
-      "low_24h": 36.834,
-      "change_pct": -0.744,
-      "volume": 539753.36
+    "XAUUSDT": {
+      "price": 5094.14,
+      "high_24h": 5182.0,
+      "low_24h": 5061.7,
+      "change_pct": -1.577,
+      "volume": 6873.102
     }
   },
   "dca_layers": {
     "BTCUSDT": 0,
     "ETHUSDT": 1,
     "HYPEUSDT": 2,
-    "XAGUSDT": 3,
+    "XAGUSDT": 4,
     "XAUUSDT": 1
   },
   "pnl_by_symbol": {}
