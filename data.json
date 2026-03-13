@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13T00:10:46.305561",
+  "updated_at": "2026-03-13T00:10:50.487279",
   "mode": "paper",
   "kill_switch": false,
   "circuit_breaker_active": false,
@@ -7,7 +7,7 @@
   "balance": 9400.0,
   "open_positions": 3,
   "realized_pnl": 0,
-  "unrealized_pnl": -3.77,
+  "unrealized_pnl": -4.09,
   "daily_pnl": 0,
   "win_rate": 0,
   "total_trades": 0,
@@ -89,22 +89,22 @@
   ],
   "prices": {
     "ETHUSDT": {
-      "price": 2078.2,
-      "change_pct": 1.267,
-      "volume": 334453.826
+      "price": 2079.2,
+      "change_pct": 1.316,
+      "volume": 334469.971
     },
     "SOLUSDT": {
-      "price": 86.95,
-      "change_pct": 0.427,
-      "volume": 1425832.55
+      "price": 87.02,
+      "change_pct": 0.508,
+      "volume": 1426118.5
     },
     "BTCUSDT": {
-      "price": 70675.6,
-      "change_pct": 0.64,
-      "volume": 17793.08
+      "price": 70696.0,
+      "change_pct": 0.669,
+      "volume": 17795.215
     }
   },
-  "last_price_update": "2026-03-13T00:10:46.297678",
+  "last_price_update": "2026-03-13T00:10:50.482403",
   "exchange_status": "connected",
   "data_status": "live",
   "sync_status": "synced",
@@ -113,55 +113,63 @@
   "last_20_trades": [],
   "signal_candidates": [
     {
-      "timestamp": "2026-03-13T00:10:46.300295",
+      "timestamp": "2026-03-13T00:10:50.484208",
       "symbol": "ETHUSDT",
       "side": "LONG",
-      "price": 2078.2,
-      "confidence": 12.67,
-      "change_pct": 1.267,
+      "price": 2079.2,
+      "confidence": 13.16,
+      "change_pct": 1.316,
       "regime": "range",
-      "explanation": "Moderate momentum: +1.27% in 24h. Continuation play.",
+      "explanation": "Moderate momentum: +1.32% in 24h. Continuation play.",
       "block_reason": null
     },
     {
-      "timestamp": "2026-03-13T00:10:46.300337",
+      "timestamp": "2026-03-13T00:10:50.484234",
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "price": 87.02,
+      "confidence": 5.08,
+      "change_pct": 0.508,
+      "regime": "range",
+      "explanation": "Weak momentum: +0.51% in 24h. Early entry attempt.",
+      "block_reason": null
+    },
+    {
+      "timestamp": "2026-03-13T00:10:50.484241",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "price": 70675.6,
-      "confidence": 6.4,
-      "change_pct": 0.64,
+      "price": 70696.0,
+      "confidence": 6.69,
+      "change_pct": 0.669,
       "regime": "range",
-      "explanation": "Weak momentum: +0.64% in 24h. Early entry attempt.",
+      "explanation": "Weak momentum: +0.67% in 24h. Early entry attempt.",
       "block_reason": null
     }
   ],
   "blocked_signals": [
     {
-      "timestamp": "2026-03-13T00:10:46.300325",
-      "symbol": "SOLUSDT",
-      "side": "LONG",
-      "price": 86.95,
-      "confidence": 4.27,
-      "change_pct": 0.427,
-      "regime": "range",
-      "explanation": "No momentum: +0.43% in 24h. Below threshold.",
-      "block_reason": "Confidence 4% < threshold 5%"
-    },
-    {
-      "timestamp": "2026-03-13T00:10:46.301120",
+      "timestamp": "2026-03-13T00:10:50.485244",
       "symbol": "ETHUSDT",
       "side": "LONG",
-      "confidence": 12.67,
+      "confidence": 13.16,
       "block_reason": "Max 3 positions",
-      "explanation": "Moderate momentum: +1.27% in 24h. Continuation pla"
+      "explanation": "Moderate momentum: +1.32% in 24h. Continuation pla"
     },
     {
-      "timestamp": "2026-03-13T00:10:46.303082",
+      "timestamp": "2026-03-13T00:10:50.486020",
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "confidence": 5.08,
+      "block_reason": "Max 3 positions",
+      "explanation": "Weak momentum: +0.51% in 24h. Early entry attempt."
+    },
+    {
+      "timestamp": "2026-03-13T00:10:50.486653",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "confidence": 6.4,
+      "confidence": 6.69,
       "block_reason": "Max 3 positions",
-      "explanation": "Weak momentum: +0.64% in 24h. Early entry attempt."
+      "explanation": "Weak momentum: +0.67% in 24h. Early entry attempt."
     }
   ]
 }
