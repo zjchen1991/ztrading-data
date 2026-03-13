@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-13T00:07:15.104911",
+  "updated_at": "2026-03-13T00:07:19.480027",
   "mode": "paper",
   "kill_switch": false,
   "circuit_breaker_active": false,
@@ -7,7 +7,7 @@
   "balance": 9400.0,
   "open_positions": 3,
   "realized_pnl": 0,
-  "unrealized_pnl": -2.4,
+  "unrealized_pnl": -2.65,
   "daily_pnl": 0,
   "win_rate": 0,
   "total_trades": 0,
@@ -89,22 +89,22 @@
   ],
   "prices": {
     "BTCUSDT": {
-      "price": 70500.0,
-      "change_pct": 0.525,
-      "volume": 17768.819
+      "price": 70507.1,
+      "change_pct": 0.535,
+      "volume": 17770.233
     },
     "ETHUSDT": {
-      "price": 2072.5,
-      "change_pct": 1.157,
-      "volume": 334631.285
+      "price": 2073.2,
+      "change_pct": 1.191,
+      "volume": 334633.404
     },
     "SOLUSDT": {
-      "price": 86.81,
-      "change_pct": 0.451,
-      "volume": 1426094.35
+      "price": 86.88,
+      "change_pct": 0.532,
+      "volume": 1426098.62
     }
   },
-  "last_price_update": "2026-03-13T00:07:15.096866",
+  "last_price_update": "2026-03-13T00:07:19.473292",
   "exchange_status": "connected",
   "data_status": "live",
   "sync_status": "synced",
@@ -113,55 +113,63 @@
   "last_20_trades": [],
   "signal_candidates": [
     {
-      "timestamp": "2026-03-13T00:07:15.099159",
+      "timestamp": "2026-03-13T00:07:19.476374",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "price": 70500.0,
-      "confidence": 5.25,
-      "change_pct": 0.525,
+      "price": 70507.1,
+      "confidence": 5.35,
+      "change_pct": 0.535,
       "regime": "range",
-      "explanation": "Weak momentum: +0.53% in 24h. Early entry attempt.",
+      "explanation": "Weak momentum: +0.54% in 24h. Early entry attempt.",
       "block_reason": null
     },
     {
-      "timestamp": "2026-03-13T00:07:15.099192",
+      "timestamp": "2026-03-13T00:07:19.476423",
       "symbol": "ETHUSDT",
       "side": "LONG",
-      "price": 2072.5,
-      "confidence": 11.57,
-      "change_pct": 1.157,
+      "price": 2073.2,
+      "confidence": 11.91,
+      "change_pct": 1.191,
       "regime": "range",
-      "explanation": "Moderate momentum: +1.16% in 24h. Continuation play.",
+      "explanation": "Moderate momentum: +1.19% in 24h. Continuation play.",
+      "block_reason": null
+    },
+    {
+      "timestamp": "2026-03-13T00:07:19.476436",
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "price": 86.88,
+      "confidence": 5.32,
+      "change_pct": 0.532,
+      "regime": "range",
+      "explanation": "Weak momentum: +0.53% in 24h. Early entry attempt.",
       "block_reason": null
     }
   ],
   "blocked_signals": [
     {
-      "timestamp": "2026-03-13T00:07:15.099202",
-      "symbol": "SOLUSDT",
-      "side": "LONG",
-      "price": 86.81,
-      "confidence": 4.51,
-      "change_pct": 0.451,
-      "regime": "range",
-      "explanation": "No momentum: +0.45% in 24h. Below threshold.",
-      "block_reason": "Confidence 5% < threshold 5%"
-    },
-    {
-      "timestamp": "2026-03-13T00:07:15.100333",
+      "timestamp": "2026-03-13T00:07:19.477233",
       "symbol": "BTCUSDT",
       "side": "LONG",
-      "confidence": 5.25,
+      "confidence": 5.35,
       "block_reason": "Max 3 positions",
-      "explanation": "Weak momentum: +0.53% in 24h. Early entry attempt."
+      "explanation": "Weak momentum: +0.54% in 24h. Early entry attempt."
     },
     {
-      "timestamp": "2026-03-13T00:07:15.102371",
+      "timestamp": "2026-03-13T00:07:19.478074",
       "symbol": "ETHUSDT",
       "side": "LONG",
-      "confidence": 11.57,
+      "confidence": 11.91,
       "block_reason": "Max 3 positions",
-      "explanation": "Moderate momentum: +1.16% in 24h. Continuation pla"
+      "explanation": "Moderate momentum: +1.19% in 24h. Continuation pla"
+    },
+    {
+      "timestamp": "2026-03-13T00:07:19.478878",
+      "symbol": "SOLUSDT",
+      "side": "LONG",
+      "confidence": 5.32,
+      "block_reason": "Max 3 positions",
+      "explanation": "Weak momentum: +0.53% in 24h. Early entry attempt."
     }
   ]
 }
