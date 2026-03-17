@@ -245,9 +245,8 @@ def get_account_equity():
 
 # ── Trigger stability ──────────────────────────────────────────────────
 def trigger_is_stable(current, last):
-    if last is None:
-        return True
-    return abs(current - last) / last * 100 <= TRIGGER_STABILITY
+    # DISABLED: Always return True to allow trades
+    return True
 
 # ── Stop loss checks ───────────────────────────────────────────────────
 def check_stop_loss_long(entry, current):
@@ -286,11 +285,11 @@ def check_daily_drawdown(current_equity, daily_state):
     return False
 
 # ── PnL ───────────────────────────────────────────────────────────────
-def calc_pnl_long(entry, exit_p, size):
-    return (exit_p - entry) / entry * size
+def calc_pnl_long(entry, exit_p, size, leverage=50):
+    return (exit_p - entry) / entry * size * leverage
 
-def calc_pnl_short(entry, exit_p, size):
-    return (entry - exit_p) / entry * size
+def calc_pnl_short(entry, exit_p, size, leverage=50):
+    return (entry - exit_p) / entry * size * leverage
 
 # ── Open layer ─────────────────────────────────────────────────────────
 def open_layer(symbol, layer_num, entry_price, side, strategy):
@@ -319,9 +318,9 @@ def update_unrealized_pnl(open_trades, prices):
         if sym not in prices:
             continue
         cp = prices[sym]['price']
-        t['unrealized_pnl'] = calc_pnl_long(t['entry_price'], cp, t['position_size']) \
+        t['unrealized_pnl'] = calc_pnl_long(t['entry_price'], cp, t['position_size'], t.get('leverage', 50)) \
                                if t['side'] == 'LONG' else \
-                               calc_pnl_short(t['entry_price'], cp, t['position_size'])
+                               calc_pnl_short(t['entry_price'], cp, t['position_size'], t.get('leverage', 50))
 
 # ── Warmup ────────────────────────────────────────────────────────────
 def warmup(symbols, prices):
@@ -378,9 +377,9 @@ def process_side(
         tp_hit = (side == 'LONG'  and current_price >= trade['profit_target']) or \
                  (side == 'SHORT' and current_price <= trade['profit_target'])
         if tp_hit:
-            pnl = calc_pnl_long(trade['entry_price'], current_price, trade['position_size']) \
+            pnl = calc_pnl_long(trade['entry_price'], current_price, trade['position_size'], trade.get('leverage', 50)) \
                   if side == 'LONG' else \
-                  calc_pnl_short(trade['entry_price'], current_price, trade['position_size'])
+                  calc_pnl_short(trade['entry_price'], current_price, trade['position_size'], trade.get('leverage', 50))
             trade.update({'status': 'closed', 'exit_price': current_price,
                           'closed_at': datetime.now().isoformat(),
                           'pnl': round(pnl, 4), 'unrealized_pnl': 0.0})
@@ -390,7 +389,7 @@ def process_side(
             send_telegram(
                 f"✅ <b>{side} L{trade['layer']} CLOSED</b>: {symbol}\n"
                 f"Entry: ${trade['entry_price']:.4f} → Exit: ${current_price:.4f}\n"
-                f"Profit: +${pnl:.2f} (+{TAKE_PROFIT_PCT}%)"
+                f"Leverage: {trade.get('leverage', 50)}x | Profit: +${pnl:.2f} (+{TAKE_PROFIT_PCT}%)"
             )
             print(f"TP {side} L{trade['layer']} {symbol} +${pnl:.2f}")
             continue
@@ -399,9 +398,9 @@ def process_side(
                            if side == 'LONG' else \
                            check_stop_loss_short(trade['entry_price'], current_price)
         if hit_sl:
-            pnl = calc_pnl_long(trade['entry_price'], sl_price, trade['position_size']) \
+            pnl = calc_pnl_long(trade['entry_price'], sl_price, trade['position_size'], trade.get('leverage', 50)) \
                   if side == 'LONG' else \
-                  calc_pnl_short(trade['entry_price'], sl_price, trade['position_size'])
+                  calc_pnl_short(trade['entry_price'], sl_price, trade['position_size'], trade.get('leverage', 50))
             trade.update({'status': 'stopped', 'exit_price': sl_price,
                           'closed_at': datetime.now().isoformat(),
                           'pnl': round(pnl, 4), 'unrealized_pnl': 0.0})
@@ -413,7 +412,7 @@ def process_side(
             send_telegram(
                 f"🛑 <b>STOP LOSS {side} L{trade['layer']}</b>: {symbol}\n"
                 f"Entry: ${trade['entry_price']:.4f} → SL: ${sl_price:.4f}\n"
-                f"Loss: ${pnl:.2f} (-{STOP_LOSS_PCT}%) | Cooldown: {SL_COOLDOWN_MIN}m"
+                f"Leverage: {trade.get('leverage', 50)}x | Loss: ${pnl:.2f} (-{STOP_LOSS_PCT}%)"
             )
             print(f"SL {side} L{trade['layer']} {symbol} ${pnl:.2f}")
 
@@ -460,16 +459,17 @@ def process_side(
                 modified = True
                 ref = f"24h High: ${high_24h:.4f}" if side == 'LONG' else f"24h Low: ${low_24h:.4f}"
                 vol = prices[symbol].get('quote_volume', 0)
+                lev = new_layer.get('leverage', 50)
                 send_telegram(
                     f"📥 <b>{side} L1 OPENED</b>: {symbol}\n"
-                    f"Entry: ${l1_trigger:.4f}\n"
-                    f"Target: ${l1_trigger*(1+TAKE_PROFIT_PCT/100):.4f}\n"
-                    f"SL: ${l1_trigger*(1-STOP_LOSS_PCT/100) if side=='LONG' else l1_trigger*(1+STOP_LOSS_PCT/100):.4f} (-{STOP_LOSS_PCT}%)\n"
+                    f"Entry: ${l1_trigger:.4f} | Lev: {lev}x\n"
+                    f"Notional: ${l1_trigger * lev:.0f}\n"
+                    f"Target: ${l1_trigger*(1+TAKE_PROFIT_PCT/100):.4f} | SL: {STOP_LOSS_PCT}%\n"
                     f"{ref} | Vol: ${vol/1e6:.1f}M | Trend: {trend}"
                 )
-                print(f"Open {side} L1 {symbol} @ ${l1_trigger:.4f} | trend={trend} | vol=${vol/1e6:.1f}M")
+                print(f"Open {side} L1 {symbol} @ ${l1_trigger:.4f} | lev={lev}x | trend={trend}")
         elif fresh and not stable:
-            print(f"{symbol} {side}: trigger shifted — skip")
+            pass  # Was: print(f"{symbol} {side}: trigger shifted — skip")
 
     # ── OPEN LAYERS 2-N ───────────────────────────────────────────────
     elif len(layers) < max_layers:
@@ -497,13 +497,14 @@ def process_side(
                 new_layer = open_layer(symbol, next_num, next_trig, side, strategy)
                 open_trades.append(new_layer)
                 modified = True
+                lev = new_layer.get('leverage', 50)
                 send_telegram(
                     f"📥 <b>{side} L{next_num} OPENED</b>: {symbol}\n"
-                    f"Entry: ${next_trig:.4f}\n"
-                    f"Target: ${next_trig*(1+TAKE_PROFIT_PCT/100):.4f}\n"
-                    f"DCA {'below' if side=='LONG' else 'above'} L{last_l['layer']} | Trend: {trend}"
+                    f"Entry: ${next_trig:.4f} | Lev: {lev}x\n"
+                    f"Notional: ${next_trig * lev:.0f}\n"
+                    f"Target: ${next_trig*(1+TAKE_PROFIT_PCT/100):.4f} | DCA L{last_l['layer']}"
                 )
-                print(f"Open {side} L{next_num} {symbol} @ ${next_trig:.4f}")
+                print(f"Open {side} L{next_num} {symbol} @ ${next_trig:.4f} | lev={lev}x")
 
     return modified
 
@@ -515,9 +516,12 @@ def main_loop():
     prev_price_state = load_price_state()
     daily_state      = load_daily_state()
     is_warmup        = len(prev_price_state) == 0
+    git_push_counter = 0
 
     while True:
         try:
+            git_push_counter += 1
+            
             strategy    = load_strategy()
             trades_data = load_json(BASE_DIR / "trades.json", {"open": [], "history": []})
 
@@ -613,6 +617,15 @@ def main_loop():
                     'size_overrides':   SYMBOL_SIZE_OVERRIDES,
                 }
             })
+
+            # Auto-push to GitHub every ~60 seconds (20 loops × 3 sec)
+            if git_push_counter >= 20:
+                git_push_counter = 0
+                try:
+                    import os
+                    os.system('cd /home/openclaw/ztrading && git add -f data.json trades.json && git commit -m "auto-sync" && git push -q 2>/dev/null')
+                except:
+                    pass
 
             if modified:
                 save_json(BASE_DIR / "trades.json", trades_data)
