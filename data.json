@@ -1,23 +1,11 @@
 {
-  "timestamp": "2026-04-01T17:02:56.254750",
-  "equity": 10017.0,
-  "unrealized_pnl": 11.47,
-  "realized_pnl": 17.0,
-  "total_pnl": 28.47,
-  "open_positions": 2,
+  "timestamp": "2026-04-01T17:04:04.813434",
+  "equity": 10025.15,
+  "unrealized_pnl": 6.06,
+  "realized_pnl": 25.15,
+  "total_pnl": 31.21,
+  "open_positions": 1,
   "positions": [
-    {
-      "symbol": "ETHUSDT",
-      "side": "LONG",
-      "layer": 1,
-      "entry_price": 2124.1525,
-      "profit_target": 2156.0147875,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-04-01T12:36:36.160614",
-      "unrealized_pnl": 6.531428416745017
-    },
     {
       "symbol": "BTCUSDT",
       "side": "LONG",
@@ -28,7 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-04-01T12:44:54.672917",
-      "unrealized_pnl": 4.940091617603312
+      "unrealized_pnl": 6.05809422901129
     }
   ],
   "history": [
@@ -61,22 +49,37 @@
       "exit_price": 75.63,
       "closed_at": "2026-04-01T15:07:49.797838",
       "pnl": 7.6142
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "layer": 1,
+      "entry_price": 2124.1525,
+      "profit_target": 2156.0147875,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-04-01T12:36:36.160614",
+      "unrealized_pnl": 0.0,
+      "exit_price": 2158.8,
+      "closed_at": "2026-04-01T17:03:10.726790",
+      "pnl": 8.1556
     }
   ],
-  "long_layers": 2,
+  "long_layers": 1,
   "short_layers": 0,
-  "daily_drawdown": -0.17,
+  "daily_drawdown": -0.25,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 68921.0,
-    "ETHUSDT": 2151.9,
-    "XAGUSDT": 75.94
+    "BTCUSDT": 69073.6,
+    "ETHUSDT": 2164.0,
+    "XAGUSDT": 75.92
   },
   "volumes_m": {
-    "BTCUSDT": 1086.5,
-    "ETHUSDT": 570.5,
+    "BTCUSDT": 1091.2,
+    "ETHUSDT": 577.2,
     "XAGUSDT": 8.1
   },
   "trends": {
