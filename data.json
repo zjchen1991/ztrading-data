@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-07T22:02:55.868402",
-  "equity": 9916.68,
-  "unrealized_pnl": 0.87,
-  "realized_pnl": -83.32,
-  "total_pnl": -82.45,
-  "open_positions": 2,
+  "timestamp": "2026-04-07T22:04:05.667564",
+  "equity": 9924.23,
+  "unrealized_pnl": -4.72,
+  "realized_pnl": -75.77,
+  "total_pnl": -80.49,
+  "open_positions": 1,
   "positions": [
     {
       "symbol": "XAGUSDT",
@@ -16,19 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-04-07T19:46:08.354168",
-      "unrealized_pnl": -5.335150164369848
-    },
-    {
-      "symbol": "ETHUSDT",
-      "side": "LONG",
-      "layer": 1,
-      "entry_price": 2121.5915,
-      "profit_target": 2153.4153724999996,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-04-07T20:02:08.068410",
-      "unrealized_pnl": 6.200180383452727
+      "unrealized_pnl": -4.719054749647716
     }
   ],
   "history": [
@@ -451,22 +439,37 @@
       "exit_price": 73.40044057499998,
       "closed_at": "2026-04-07T22:00:13.724614",
       "pnl": -10.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "layer": 1,
+      "entry_price": 2121.5915,
+      "profit_target": 2153.4153724999996,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-04-07T20:02:08.068410",
+      "unrealized_pnl": 0.0,
+      "exit_price": 2153.6,
+      "closed_at": "2026-04-07T22:03:41.781440",
+      "pnl": 7.5435
     }
   ],
-  "long_layers": 1,
+  "long_layers": 0,
   "short_layers": 1,
-  "daily_drawdown": 0.83,
+  "daily_drawdown": 0.76,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 69971.8,
-    "ETHUSDT": 2147.9,
-    "XAGUSDT": 73.82
+    "BTCUSDT": 70025.4,
+    "ETHUSDT": 2153.0,
+    "XAGUSDT": 73.73
   },
   "volumes_m": {
-    "BTCUSDT": 904.9,
-    "ETHUSDT": 604.1,
+    "BTCUSDT": 905.8,
+    "ETHUSDT": 604.6,
     "XAGUSDT": 15.2
   },
   "trends": {
