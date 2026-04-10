@@ -1,23 +1,11 @@
 {
-  "timestamp": "2026-04-10T14:24:10.525448",
-  "equity": 9968.3,
-  "unrealized_pnl": 12.63,
-  "realized_pnl": -31.7,
-  "total_pnl": -19.07,
-  "open_positions": 2,
+  "timestamp": "2026-04-10T14:25:19.372404",
+  "equity": 9976.0,
+  "unrealized_pnl": 6.87,
+  "realized_pnl": -24.0,
+  "total_pnl": -17.13,
+  "open_positions": 1,
   "positions": [
-    {
-      "symbol": "ETHUSDT",
-      "side": "LONG",
-      "layer": 1,
-      "entry_price": 2216.25,
-      "profit_target": 2249.4937499999996,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-04-09T22:31:22.427578",
-      "unrealized_pnl": 6.441060349689832
-    },
     {
       "symbol": "BTCUSDT",
       "side": "LONG",
@@ -28,7 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-04-09T22:58:04.843367",
-      "unrealized_pnl": 6.186103457768245
+      "unrealized_pnl": 6.869263391826609
     }
   ],
   "history": [
@@ -691,22 +679,37 @@
       "exit_price": 2217.1,
       "closed_at": "2026-04-10T11:29:46.943531",
       "pnl": 7.8089
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "layer": 1,
+      "entry_price": 2216.25,
+      "profit_target": 2249.4937499999996,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-04-09T22:31:22.427578",
+      "unrealized_pnl": 0.0,
+      "exit_price": 2250.4,
+      "closed_at": "2026-04-10T14:25:12.633507",
+      "pnl": 7.7045
     }
   ],
-  "long_layers": 2,
+  "long_layers": 1,
   "short_layers": 0,
-  "daily_drawdown": 0.32,
+  "daily_drawdown": 0.24,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 72909.3,
-    "ETHUSDT": 2244.8,
-    "XAGUSDT": 76.71
+    "BTCUSDT": 73007.7,
+    "ETHUSDT": 2249.22,
+    "XAGUSDT": 76.83
   },
   "volumes_m": {
-    "BTCUSDT": 1110.0,
-    "ETHUSDT": 504.5,
+    "BTCUSDT": 1114.6,
+    "ETHUSDT": 506.1,
     "XAGUSDT": 7.1
   },
   "trends": {
