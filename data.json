@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-04-14T15:05:02.325718",
+  "timestamp": "2026-04-14T15:06:10.945333",
   "equity": 9897.2,
-  "unrealized_pnl": -4.06,
+  "unrealized_pnl": -4.55,
   "realized_pnl": -102.8,
-  "total_pnl": -106.86,
-  "open_positions": 1,
+  "total_pnl": -107.36,
+  "open_positions": 2,
   "positions": [
     {
       "symbol": "ETHUSDT",
@@ -16,7 +16,19 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-04-14T14:40:30.777890",
-      "unrealized_pnl": -4.059951195913784
+      "unrealized_pnl": -4.545587313186215
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "layer": 1,
+      "entry_price": 74849.06649999999,
+      "profit_target": 75971.80249749997,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "open",
+      "opened_at": "2026-04-14T15:05:40.662291",
+      "unrealized_pnl": -0.009128370358427743
     }
   ],
   "history": [
@@ -921,21 +933,21 @@
       "pnl": -10.0
     }
   ],
-  "long_layers": 1,
+  "long_layers": 2,
   "short_layers": 0,
   "daily_drawdown": 1.03,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 74965.1,
-    "ETHUSDT": 2348.8,
-    "XAGUSDT": 78.86
+    "BTCUSDT": 74847.7,
+    "ETHUSDT": 2346.5,
+    "XAGUSDT": 78.7
   },
   "volumes_m": {
-    "BTCUSDT": 1179.8,
-    "ETHUSDT": 749.2,
-    "XAGUSDT": 10.5
+    "BTCUSDT": 1178.6,
+    "ETHUSDT": 752.5,
+    "XAGUSDT": 10.4
   },
   "trends": {
     "BTCUSDT": "BULLISH",
