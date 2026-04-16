@@ -1,23 +1,11 @@
 {
-  "timestamp": "2026-04-16T19:59:48.511187",
-  "equity": 9895.31,
-  "unrealized_pnl": 9.33,
-  "realized_pnl": -104.69,
-  "total_pnl": -95.36,
-  "open_positions": 2,
+  "timestamp": "2026-04-16T20:00:56.533545",
+  "equity": 9903.38,
+  "unrealized_pnl": 2.19,
+  "realized_pnl": -96.62,
+  "total_pnl": -94.43,
+  "open_positions": 1,
   "positions": [
-    {
-      "symbol": "BTCUSDT",
-      "side": "LONG",
-      "layer": 1,
-      "entry_price": 74255.7025,
-      "profit_target": 75369.5380375,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-04-16T16:35:07.816368",
-      "unrealized_pnl": 7.089674358679768
-    },
     {
       "symbol": "ETHUSDT",
       "side": "LONG",
@@ -28,7 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-04-16T19:32:36.164655",
-      "unrealized_pnl": 2.243005934513436
+      "unrealized_pnl": 2.1855257140959545
     }
   ],
   "history": [
@@ -1066,22 +1054,37 @@
       "exit_price": 74849.4,
       "closed_at": "2026-04-16T15:37:52.910366",
       "pnl": 7.6165
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "layer": 1,
+      "entry_price": 74255.7025,
+      "profit_target": 75369.5380375,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-04-16T16:35:07.816368",
+      "unrealized_pnl": 0.0,
+      "exit_price": 75454.6,
+      "closed_at": "2026-04-16T20:00:16.448706",
+      "pnl": 8.0728
     }
   ],
-  "long_layers": 2,
+  "long_layers": 1,
   "short_layers": 0,
-  "daily_drawdown": 1.05,
+  "daily_drawdown": 0.97,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 75308.6,
-    "ETHUSDT": 2359.17,
-    "XAGUSDT": 78.8
+    "BTCUSDT": 75360.3,
+    "ETHUSDT": 2358.9,
+    "XAGUSDT": 78.75
   },
   "volumes_m": {
-    "BTCUSDT": 885.1,
-    "ETHUSDT": 576.4,
+    "BTCUSDT": 888.4,
+    "ETHUSDT": 578.1,
     "XAGUSDT": 6.3
   },
   "trends": {
