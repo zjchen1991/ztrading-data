@@ -1,11 +1,24 @@
 {
-  "timestamp": "2026-05-03T01:01:57.922289",
+  "timestamp": "2026-05-03T01:03:05.999210",
   "equity": 9811.29,
-  "unrealized_pnl": 0,
+  "unrealized_pnl": 0.0,
   "realized_pnl": -188.71,
   "total_pnl": -188.71,
-  "open_positions": 0,
-  "positions": [],
+  "open_positions": 1,
+  "positions": [
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "layer": 1,
+      "entry_price": 2306.2987,
+      "profit_target": 2340.8931804999997,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "open",
+      "opened_at": "2026-05-03T01:02:29.372267",
+      "unrealized_pnl": 0.002449812767123211
+    }
+  ],
   "history": [
     {
       "symbol": "ETHUSDT",
@@ -1703,20 +1716,20 @@
       "pnl": -10.0
     }
   ],
-  "long_layers": 0,
+  "long_layers": 1,
   "short_layers": 0,
   "daily_drawdown": 0.55,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 78342.9,
-    "ETHUSDT": 2309.21,
+    "BTCUSDT": 78299.6,
+    "ETHUSDT": 2306.31,
     "XAGUSDT": 75.5
   },
   "volumes_m": {
-    "BTCUSDT": 311.3,
-    "ETHUSDT": 165.4,
+    "BTCUSDT": 312.7,
+    "ETHUSDT": 166.0,
     "XAGUSDT": 0.1
   },
   "trends": {
