@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-05T13:21:24.399279",
-  "equity": 9820.66,
-  "unrealized_pnl": 3.88,
-  "realized_pnl": -179.34,
-  "total_pnl": -175.46,
-  "open_positions": 2,
+  "timestamp": "2026-05-05T13:22:32.690993",
+  "equity": 9828.31,
+  "unrealized_pnl": -3.52,
+  "realized_pnl": -171.69,
+  "total_pnl": -175.2,
+  "open_positions": 1,
   "positions": [
     {
       "symbol": "XAGUSDT",
@@ -16,19 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-05-04T13:30:57.643008",
-      "unrealized_pnl": -3.380522275184586
-    },
-    {
-      "symbol": "ETHUSDT",
-      "side": "LONG",
-      "layer": 1,
-      "entry_price": 2361.636,
-      "profit_target": 2397.06054,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-05-04T15:13:52.617149",
-      "unrealized_pnl": 7.256410386698011
+      "unrealized_pnl": -3.516847399700617
     }
   ],
   "history": [
@@ -1846,22 +1834,37 @@
       "exit_price": 80540.2,
       "closed_at": "2026-05-04T17:51:37.364527",
       "pnl": 7.5525
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "LONG",
+      "layer": 1,
+      "entry_price": 2361.636,
+      "profit_target": 2397.06054,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-05-04T15:13:52.617149",
+      "unrealized_pnl": 0.0,
+      "exit_price": 2397.76,
+      "closed_at": "2026-05-05T13:21:38.987708",
+      "pnl": 7.6481
     }
   ],
-  "long_layers": 1,
+  "long_layers": 0,
   "short_layers": 1,
-  "daily_drawdown": 0.46,
+  "daily_drawdown": 0.38,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 81619.4,
-    "ETHUSDT": 2395.91,
-    "XAGUSDT": 73.85
+    "BTCUSDT": 81607.3,
+    "ETHUSDT": 2396.0,
+    "XAGUSDT": 73.87
   },
   "volumes_m": {
-    "BTCUSDT": 1081.4,
-    "ETHUSDT": 449.5,
+    "BTCUSDT": 1084.9,
+    "ETHUSDT": 453.3,
     "XAGUSDT": 4.3
   },
   "trends": {
