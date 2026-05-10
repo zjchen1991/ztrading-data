@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-10T15:35:24.718714",
-  "equity": 9785.92,
-  "unrealized_pnl": -9.91,
-  "realized_pnl": -214.08,
-  "total_pnl": -223.99,
-  "open_positions": 5,
+  "timestamp": "2026-05-10T15:36:33.452569",
+  "equity": 9775.92,
+  "unrealized_pnl": -1.9,
+  "realized_pnl": -224.08,
+  "total_pnl": -225.99,
+  "open_positions": 4,
   "positions": [
     {
       "symbol": "BTCUSDT",
@@ -16,19 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-05-07T13:47:48.521302",
-      "unrealized_pnl": 3.771731433134943
-    },
-    {
-      "symbol": "ETHUSDT",
-      "side": "SHORT",
-      "layer": 1,
-      "entry_price": 2292.7327499999997,
-      "profit_target": 2258.34175875,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-05-07T14:32:45.665401",
-      "unrealized_pnl": -9.383398479391143
+      "unrealized_pnl": 4.4214326557509755
     },
     {
       "symbol": "BTCUSDT",
@@ -40,7 +28,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-05-08T12:30:05.097368",
-      "unrealized_pnl": -3.8166943131742244
+      "unrealized_pnl": -4.466453523240348
     },
     {
       "symbol": "XAGUSDT",
@@ -52,7 +40,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-05-08T13:11:28.809926",
-      "unrealized_pnl": 1.3748271041402855
+      "unrealized_pnl": 1.2512749042625029
     },
     {
       "symbol": "ETHUSDT",
@@ -64,7 +52,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-05-09T17:05:27.765579",
-      "unrealized_pnl": -1.855565004326284
+      "unrealized_pnl": -3.1103328313398086
     }
   ],
   "history": [
@@ -1987,22 +1975,37 @@
       "exit_price": 2268.8871459866496,
       "closed_at": "2026-05-08T02:17:13.228162",
       "pnl": -10.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "layer": 1,
+      "entry_price": 2292.7327499999997,
+      "profit_target": 2258.34175875,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "stopped",
+      "opened_at": "2026-05-07T14:32:45.665401",
+      "unrealized_pnl": 0.0,
+      "exit_price": 2338.5874049999998,
+      "closed_at": "2026-05-10T15:36:30.095744",
+      "pnl": -10.0
     }
   ],
   "long_layers": 2,
-  "short_layers": 3,
-  "daily_drawdown": 0.81,
+  "short_layers": 2,
+  "daily_drawdown": 0.91,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 80950.7,
-    "ETHUSDT": 2335.76,
-    "XAGUSDT": 81.16
+    "BTCUSDT": 81055.1,
+    "ETHUSDT": 2341.6,
+    "XAGUSDT": 81.14
   },
   "volumes_m": {
     "BTCUSDT": 320.3,
-    "ETHUSDT": 181.9,
+    "ETHUSDT": 182.3,
     "XAGUSDT": 0.9
   },
   "trends": {
