@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-05-15T13:37:36.444396",
-  "equity": 9793.91,
-  "unrealized_pnl": -0.41,
-  "realized_pnl": -206.09,
-  "total_pnl": -206.51,
+  "timestamp": "2026-05-15T13:38:45.092146",
+  "equity": 9801.43,
+  "unrealized_pnl": -9.81,
+  "realized_pnl": -198.57,
+  "total_pnl": -208.38,
   "open_positions": 2,
   "positions": [
     {
@@ -16,19 +16,19 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-05-15T02:32:30.338511",
-      "unrealized_pnl": -7.4186638297717336
+      "unrealized_pnl": -8.646999895956723
     },
     {
-      "symbol": "ETHUSDT",
-      "side": "SHORT",
-      "layer": 1,
-      "entry_price": 2269.7429999999995,
-      "profit_target": 2235.6968549999997,
+      "symbol": "BTCUSDT",
+      "side": "LONG",
+      "layer": 2,
+      "entry_price": 79548.2626375,
+      "profit_target": 80741.48657706249,
       "position_size": 100,
       "leverage": 5,
       "status": "open",
-      "opened_at": "2026-05-15T07:26:42.443198",
-      "unrealized_pnl": 7.005859253668683
+      "opened_at": "2026-05-15T13:38:05.030964",
+      "unrealized_pnl": -1.1644668994484195
     }
   ],
   "history": [
@@ -2311,22 +2311,37 @@
       "exit_price": 80013.3,
       "closed_at": "2026-05-15T13:27:53.707772",
       "pnl": 7.542
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "layer": 1,
+      "entry_price": 2269.7429999999995,
+      "profit_target": 2235.6968549999997,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-05-15T07:26:42.443198",
+      "unrealized_pnl": 0.0,
+      "exit_price": 2235.59,
+      "closed_at": "2026-05-15T13:38:08.377170",
+      "pnl": 7.5235
     }
   ],
-  "long_layers": 1,
-  "short_layers": 1,
-  "daily_drawdown": 0.73,
+  "long_layers": 2,
+  "short_layers": 0,
+  "daily_drawdown": 0.65,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 79561.4,
-    "ETHUSDT": 2237.94,
-    "XAGUSDT": 76.49
+    "BTCUSDT": 79363.0,
+    "ETHUSDT": 2229.37,
+    "XAGUSDT": 76.56
   },
   "volumes_m": {
-    "BTCUSDT": 1140.3,
-    "ETHUSDT": 526.3,
+    "BTCUSDT": 1147.8,
+    "ETHUSDT": 529.3,
     "XAGUSDT": 15.6
   },
   "trends": {
