@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-24T21:44:06.767225",
-  "equity": 9783.0,
-  "unrealized_pnl": 9.14,
-  "realized_pnl": -217.0,
-  "total_pnl": -207.86,
-  "open_positions": 2,
+  "timestamp": "2026-05-24T21:45:14.634047",
+  "equity": 9790.52,
+  "unrealized_pnl": 2.15,
+  "realized_pnl": -209.48,
+  "total_pnl": -207.33,
+  "open_positions": 1,
   "positions": [
     {
       "symbol": "BTCUSDT",
@@ -16,19 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-05-23T20:37:37.076066",
-      "unrealized_pnl": 2.160254244965927
-    },
-    {
-      "symbol": "ETHUSDT",
-      "side": "SHORT",
-      "layer": 1,
-      "entry_price": 2099.59855,
-      "profit_target": 2068.10457175,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-05-24T18:37:08.380119",
-      "unrealized_pnl": 6.974797634528803
+      "unrealized_pnl": 2.153062608226001
     }
   ],
   "history": [
@@ -2596,22 +2584,37 @@
       "exit_price": 2140.8953447442746,
       "closed_at": "2026-05-23T20:55:31.934685",
       "pnl": -10.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "layer": 1,
+      "entry_price": 2099.59855,
+      "profit_target": 2068.10457175,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-05-24T18:37:08.380119",
+      "unrealized_pnl": 0.0,
+      "exit_price": 2068.04,
+      "closed_at": "2026-05-24T21:44:24.573055",
+      "pnl": 7.5154
     }
   ],
   "long_layers": 0,
-  "short_layers": 2,
-  "daily_drawdown": 0.06,
+  "short_layers": 1,
+  "daily_drawdown": -0.01,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 76147.3,
-    "ETHUSDT": 2070.31,
-    "XAGUSDT": 76.16
+    "BTCUSDT": 76148.4,
+    "ETHUSDT": 2069.46,
+    "XAGUSDT": 76.22
   },
   "volumes_m": {
-    "BTCUSDT": 492.8,
-    "ETHUSDT": 212.8,
+    "BTCUSDT": 494.4,
+    "ETHUSDT": 213.1,
     "XAGUSDT": 4.9
   },
   "trends": {
