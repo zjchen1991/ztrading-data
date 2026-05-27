@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-27T13:41:43.190514",
-  "equity": 9765.68,
-  "unrealized_pnl": 1.59,
-  "realized_pnl": -234.32,
-  "total_pnl": -232.73,
-  "open_positions": 2,
+  "timestamp": "2026-05-27T13:42:51.761946",
+  "equity": 9773.32,
+  "unrealized_pnl": -5.23,
+  "realized_pnl": -226.68,
+  "total_pnl": -231.91,
+  "open_positions": 1,
   "positions": [
     {
       "symbol": "ETHUSDT",
@@ -16,19 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-05-26T15:54:06.981250",
-      "unrealized_pnl": -5.008547699766465
-    },
-    {
-      "symbol": "ETHUSDT",
-      "side": "SHORT",
-      "layer": 1,
-      "entry_price": 2084.53595,
-      "profit_target": 2053.26791075,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-05-27T08:02:14.348280",
-      "unrealized_pnl": 6.600018099951689
+      "unrealized_pnl": -5.234744802936219
     }
   ],
   "history": [
@@ -2701,22 +2689,37 @@
       "exit_price": 75332.39812,
       "closed_at": "2026-05-27T04:31:28.219698",
       "pnl": -10.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "layer": 1,
+      "entry_price": 2084.53595,
+      "profit_target": 2053.26791075,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-05-27T08:02:14.348280",
+      "unrealized_pnl": 0.0,
+      "exit_price": 2052.68,
+      "closed_at": "2026-05-27T13:42:31.725178",
+      "pnl": 7.641
     }
   ],
   "long_layers": 1,
-  "short_layers": 1,
-  "daily_drawdown": 0.24,
+  "short_layers": 0,
+  "daily_drawdown": 0.16,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 74907.5,
-    "ETHUSDT": 2057.02,
-    "XAGUSDT": 74.32
+    "BTCUSDT": 74956.9,
+    "ETHUSDT": 2056.08,
+    "XAGUSDT": 74.43
   },
   "volumes_m": {
-    "BTCUSDT": 876.3,
-    "ETHUSDT": 394.9,
+    "BTCUSDT": 877.8,
+    "ETHUSDT": 396.0,
     "XAGUSDT": 6.2
   },
   "trends": {
