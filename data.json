@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-02T19:28:01.072926",
-  "equity": 9799.54,
-  "unrealized_pnl": 8.95,
-  "realized_pnl": -200.46,
-  "total_pnl": -191.51,
-  "open_positions": 2,
+  "timestamp": "2026-06-02T19:29:09.694144",
+  "equity": 9807.48,
+  "unrealized_pnl": 2.91,
+  "realized_pnl": -192.52,
+  "total_pnl": -189.61,
+  "open_positions": 1,
   "positions": [
     {
       "symbol": "ETHUSDT",
@@ -16,19 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-06-02T15:46:32.259192",
-      "unrealized_pnl": 2.2102666693069195
-    },
-    {
-      "symbol": "BTCUSDT",
-      "side": "SHORT",
-      "layer": 1,
-      "entry_price": 68046.31049999999,
-      "profit_target": 67025.61584249999,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-06-02T16:18:28.520833",
-      "unrealized_pnl": 6.738870140505232
+      "unrealized_pnl": 2.906873824589518
     }
   ],
   "history": [
@@ -2836,22 +2824,37 @@
       "exit_price": 1953.0,
       "closed_at": "2026-06-02T14:21:28.506138",
       "pnl": 7.9787
+    },
+    {
+      "symbol": "BTCUSDT",
+      "side": "SHORT",
+      "layer": 1,
+      "entry_price": 68046.31049999999,
+      "profit_target": 67025.61584249999,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-06-02T16:18:28.520833",
+      "unrealized_pnl": 0.0,
+      "exit_price": 66965.9,
+      "closed_at": "2026-06-02T19:28:05.846857",
+      "pnl": 7.9388
     }
   ],
   "long_layers": 0,
-  "short_layers": 2,
-  "daily_drawdown": -0.11,
+  "short_layers": 1,
+  "daily_drawdown": -0.19,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 67129.2,
-    "ETHUSDT": 1907.96,
-    "XAGUSDT": 75.12
+    "BTCUSDT": 66996.4,
+    "ETHUSDT": 1905.29,
+    "XAGUSDT": 75.11
   },
   "volumes_m": {
-    "BTCUSDT": 1504.8,
-    "ETHUSDT": 745.8,
+    "BTCUSDT": 1520.3,
+    "ETHUSDT": 748.3,
     "XAGUSDT": 5.6
   },
   "trends": {
