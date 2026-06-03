@@ -1,23 +1,11 @@
 {
-  "timestamp": "2026-06-03T21:42:50.720853",
-  "equity": 9877.35,
-  "unrealized_pnl": -4.35,
-  "realized_pnl": -122.65,
-  "total_pnl": -126.99,
+  "timestamp": "2026-06-03T21:44:08.204982",
+  "equity": 9867.35,
+  "unrealized_pnl": -1.42,
+  "realized_pnl": -132.65,
+  "total_pnl": -134.06,
   "open_positions": 2,
   "positions": [
-    {
-      "symbol": "ETHUSDT",
-      "side": "SHORT",
-      "layer": 1,
-      "entry_price": 1796.7428499999999,
-      "profit_target": 1769.79170725,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-06-03T21:06:00.649316",
-      "unrealized_pnl": -6.5666464179891015
-    },
     {
       "symbol": "BTCUSDT",
       "side": "SHORT",
@@ -28,7 +16,19 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-06-03T21:36:00.395132",
-      "unrealized_pnl": 2.2209333890429157
+      "unrealized_pnl": 1.0800540344223508
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "layer": 2,
+      "entry_price": 1823.6939927499998,
+      "profit_target": 1796.3385828587498,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "open",
+      "opened_at": "2026-06-03T21:43:11.534831",
+      "unrealized_pnl": -2.4965831126824543
     }
   ],
   "history": [
@@ -3016,22 +3016,37 @@
       "exit_price": 65365.9,
       "closed_at": "2026-06-03T19:54:05.843302",
       "pnl": 7.8153
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "layer": 1,
+      "entry_price": 1796.7428499999999,
+      "profit_target": 1769.79170725,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "stopped",
+      "opened_at": "2026-06-03T21:06:00.649316",
+      "unrealized_pnl": 0.0,
+      "exit_price": 1832.6777069999998,
+      "closed_at": "2026-06-03T21:43:39.101905",
+      "pnl": -10.0
     }
   ],
   "long_layers": 0,
   "short_layers": 2,
-  "daily_drawdown": -0.9,
+  "daily_drawdown": -0.8,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 65359.5,
-    "ETHUSDT": 1820.34,
-    "XAGUSDT": 72.99
+    "BTCUSDT": 65509.3,
+    "ETHUSDT": 1832.8,
+    "XAGUSDT": 73.04
   },
   "volumes_m": {
-    "BTCUSDT": 1714.4,
-    "ETHUSDT": 985.1,
+    "BTCUSDT": 1715.7,
+    "ETHUSDT": 993.7,
     "XAGUSDT": 5.6
   },
   "trends": {
