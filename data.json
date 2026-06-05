@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-05T13:50:28.029135",
+  "timestamp": "2026-06-05T13:51:36.245681",
   "equity": 9857.75,
-  "unrealized_pnl": 8.36,
+  "unrealized_pnl": 16.08,
   "realized_pnl": -142.25,
-  "total_pnl": -133.88,
-  "open_positions": 2,
+  "total_pnl": -126.16,
+  "open_positions": 1,
   "positions": [
     {
       "symbol": "BTCUSDT",
@@ -16,19 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-06-05T06:44:21.051818",
-      "unrealized_pnl": 6.191808438434146
-    },
-    {
-      "symbol": "ETHUSDT",
-      "side": "SHORT",
-      "layer": 2,
-      "entry_price": 1670.1183519999995,
-      "profit_target": 1645.0665767199996,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-06-05T07:41:57.007511",
-      "unrealized_pnl": 2.1730052817237726
+      "unrealized_pnl": 6.982787828873544
     }
   ],
   "history": [
@@ -3256,23 +3244,38 @@
       "exit_price": 61996.2,
       "closed_at": "2026-06-05T11:45:43.756646",
       "pnl": 7.5125
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "layer": 2,
+      "entry_price": 1670.1183519999995,
+      "profit_target": 1645.0665767199996,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-06-05T07:41:57.007511",
+      "unrealized_pnl": 0.0,
+      "exit_price": 1639.72,
+      "closed_at": "2026-06-05T13:51:36.236122",
+      "pnl": 9.1007
     }
   ],
   "long_layers": 0,
-  "short_layers": 2,
+  "short_layers": 1,
   "daily_drawdown": -0.7,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 61243.8,
-    "ETHUSDT": 1662.86,
-    "XAGUSDT": 70.41
+    "BTCUSDT": 61145.7,
+    "ETHUSDT": 1639.72,
+    "XAGUSDT": 70.42
   },
   "volumes_m": {
-    "BTCUSDT": 1817.2,
-    "ETHUSDT": 905.1,
-    "XAGUSDT": 7.7
+    "BTCUSDT": 1819.4,
+    "ETHUSDT": 905.6,
+    "XAGUSDT": 7.8
   },
   "trends": {
     "BTCUSDT": "BEARISH",
