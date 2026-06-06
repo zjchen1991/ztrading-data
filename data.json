@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-06-06T04:12:53.495476",
-  "equity": 9913.13,
-  "unrealized_pnl": 12.89,
-  "realized_pnl": -86.87,
-  "total_pnl": -73.98,
-  "open_positions": 2,
+  "timestamp": "2026-06-06T04:14:01.681555",
+  "equity": 9920.72,
+  "unrealized_pnl": 6.36,
+  "realized_pnl": -79.28,
+  "total_pnl": -72.92,
+  "open_positions": 1,
   "positions": [
     {
       "symbol": "BTCUSDT",
@@ -16,19 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-06-05T20:09:41.581777",
-      "unrealized_pnl": 5.885688794202948
-    },
-    {
-      "symbol": "ETHUSDT",
-      "side": "SHORT",
-      "layer": 1,
-      "entry_price": 1561.6891499999997,
-      "profit_target": 1538.2638127499997,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-06-06T03:35:46.015823",
-      "unrealized_pnl": 7.00496318361428
+      "unrealized_pnl": 6.361978378317719
     }
   ],
   "history": [
@@ -3511,22 +3499,37 @@
       "exit_price": 1560.66,
       "closed_at": "2026-06-06T03:31:56.744392",
       "pnl": 7.7138
+    },
+    {
+      "symbol": "ETHUSDT",
+      "side": "SHORT",
+      "layer": 1,
+      "entry_price": 1561.6891499999997,
+      "profit_target": 1538.2638127499997,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "closed",
+      "opened_at": "2026-06-06T03:35:46.015823",
+      "unrealized_pnl": 0.0,
+      "exit_price": 1538.01,
+      "closed_at": "2026-06-06T04:13:18.016770",
+      "pnl": 7.5813
     }
   ],
   "long_layers": 0,
-  "short_layers": 2,
-  "daily_drawdown": -1.27,
+  "short_layers": 1,
+  "daily_drawdown": -1.34,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 60170.6,
-    "ETHUSDT": 1539.81,
+    "BTCUSDT": 60112.6,
+    "ETHUSDT": 1538.08,
     "XAGUSDT": 67.72
   },
   "volumes_m": {
-    "BTCUSDT": 2399.1,
-    "ETHUSDT": 1018.7,
+    "BTCUSDT": 2400.3,
+    "ETHUSDT": 1019.0,
     "XAGUSDT": 9.8
   },
   "trends": {
