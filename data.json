@@ -1,23 +1,11 @@
 {
-  "timestamp": "2026-06-08T11:58:13.527158",
-  "equity": 9875.91,
-  "unrealized_pnl": -11.47,
-  "realized_pnl": -124.09,
-  "total_pnl": -135.56,
-  "open_positions": 2,
+  "timestamp": "2026-06-08T11:59:23.084719",
+  "equity": 9865.91,
+  "unrealized_pnl": -2.12,
+  "realized_pnl": -134.09,
+  "total_pnl": -136.2,
+  "open_positions": 1,
   "positions": [
-    {
-      "symbol": "XAGUSDT",
-      "side": "SHORT",
-      "layer": 1,
-      "entry_price": 67.20315,
-      "profit_target": 66.19510274999999,
-      "position_size": 100,
-      "leverage": 5,
-      "status": "open",
-      "opened_at": "2026-06-08T09:37:36.647982",
-      "unrealized_pnl": -9.499926714744847
-    },
     {
       "symbol": "XAGUSDT",
       "side": "SHORT",
@@ -28,7 +16,7 @@
       "leverage": 5,
       "status": "open",
       "opened_at": "2026-06-08T11:20:12.482812",
-      "unrealized_pnl": -1.9703711475319428
+      "unrealized_pnl": -2.116974643778272
     }
   ],
   "history": [
@@ -3646,22 +3634,37 @@
       "exit_price": 63982.20014959786,
       "closed_at": "2026-06-07T22:15:19.638906",
       "pnl": -10.0
+    },
+    {
+      "symbol": "XAGUSDT",
+      "side": "SHORT",
+      "layer": 1,
+      "entry_price": 67.20315,
+      "profit_target": 66.19510274999999,
+      "position_size": 100,
+      "leverage": 5,
+      "status": "stopped",
+      "opened_at": "2026-06-08T09:37:36.647982",
+      "unrealized_pnl": 0.0,
+      "exit_price": 68.547213,
+      "closed_at": "2026-06-08T11:58:49.243806",
+      "pnl": -10.0
     }
   ],
   "long_layers": 0,
-  "short_layers": 2,
-  "daily_drawdown": -0.89,
+  "short_layers": 1,
+  "daily_drawdown": -0.78,
   "strategy": "DCA Dual Long + Short - Strategy 2",
   "mode": "paper",
   "kill_switch": false,
   "prices": {
-    "BTCUSDT": 63431.9,
+    "BTCUSDT": 63436.8,
     "ETHUSDT": 1682.75,
-    "XAGUSDT": 68.48
+    "XAGUSDT": 68.5
   },
   "volumes_m": {
     "BTCUSDT": 1055.7,
-    "ETHUSDT": 563.7,
+    "ETHUSDT": 563.9,
     "XAGUSDT": 13.2
   },
   "trends": {
